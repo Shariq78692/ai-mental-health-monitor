@@ -1,52 +1,78 @@
-# ai-mental-health-monitor
-Final project for the Building AI course by Reaktor and University of Helsinki
+# AI-Powered Early Detection of Student Mental Health Issues  
+Final project for the Building AI course
 
-Summary
-An AI system that identifies early warning signs of student mental health struggles by analyzing language patterns, behavioral data, and engagement trends from digital platforms, enabling timely support by school counselors.
-Building AI course project
+## Summary
 
-Background
-Mental health issues among students, including anxiety, depression, and burnout, are increasingly common and often go unnoticed until they escalate. Traditional support systems rely heavily on self-reporting or visible symptoms, which delays intervention.
-Students hesitate to seek help due to stigma
-Schools lack the resources for continuous monitoring
-Early intervention can drastically improve outcomes
-As someone who has seen peers struggle silently, I believe AI can play a vital role in proactive mental health support.
+An AI system that identifies early signs of mental health struggles among students using NLP and behavioral analytics. Helps school counselors offer timely, confidential support.
 
-How is it used?
-The system is integrated with digital tools students already use (e.g., learning management systems, chat platforms, submission portals). It uses natural language processing (NLP) and behavior analytics to detect patterns such as:
-Negative sentiment in messages
-Decrease in participation or productivity
-Unusual sleep/activity hours based on digital usage
-Alerts are triggered only when a threshold is met, and they are sent confidentially to school counselors—not to teachers or peers. The system is designed to preserve student privacy while enabling early support.
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Mental_health_icon.svg/1200px-Mental_health_icon.svg.png" width="200">
+**Building AI course project**
 
-Data sources and AI methods
-Data sources (with privacy and consent):
-Anonymized message logs from school chat apps
-Assignment submission timestamps
-LMS engagement logs
+## Background
 
-AI methods:
-NLP (sentiment analysis, topic modeling)
-Time-series analysis for engagement patterns
-Anomaly detection
-This project could use open datasets like CLPsych for language modeling on mental health signals, and simulated LMS logs for prototyping.
+Mental health issues among students, such as anxiety, depression, and burnout, often go unnoticed until they become severe. Traditional support systems rely on students seeking help, which many are hesitant to do due to stigma or lack of awareness.
 
-Challenges
-Privacy – Extreme care must be taken to ensure student data is protected and anonymized.
-False positives/negatives – Not all behavioral changes indicate distress; balance is key.
-Ethical use – The system must not become a surveillance tool. Human judgment is essential for any action.
-Consent – Opt-in mechanisms are critical.
+This project addresses:
+* Undetected early warning signs in students
+* Limited capacity of schools to monitor individual well-being
+* The need for privacy-preserving proactive support systems
 
-What next?
-Build a proof-of-concept using synthetic data
-Partner with educators and psychologists for evaluation
-Improve accuracy by incorporating feedback
-Add language support for multilingual schools
-Open-source the project under a responsible AI license
+Personal motivation: I’ve seen classmates silently suffer and believe AI can offer a compassionate, preventive solution. Education and mental well-being must go hand in hand.
 
-Acknowledgments
-Inspired by CLPsych shared task
-Use of Transformers by Hugging Face
-Mental health icons from Wikimedia / CC BY-SA
-Based on coursework from the Building AI course by Reaktor and University of Helsinki
+## How is it used?
+
+The system integrates with existing school tools like Learning Management Systems (LMS), chat apps, and submission portals. It monitors patterns such as:
+* Language used in messages or submissions (e.g., negative sentiment)
+* Reduced activity or participation
+* Sudden changes in sleep/activity based on platform usage
+
+When a pattern crosses a sensitivity threshold, an alert is sent **only to trained school counselors**, not to teachers or classmates.
+
+This ensures:
+* Confidentiality and trust
+* Early, non-intrusive support
+* A data-driven approach to well-being
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Mental_health_icon.svg/1200px-Mental_health_icon.svg.png" width="250">
+
+## Data sources and AI methods
+
+**Data sources (simulated or with consent):**
+* Chat logs from school-approved platforms
+* LMS activity logs (logins, submissions, forum posts)
+* Assignment submission timestamps
+
+**AI techniques:**
+* NLP for sentiment analysis and topic modeling
+* Time-series anomaly detection
+* Classification algorithms for risk levels
+
+Potential datasets for modeling:
+* [CLPsych 2021 Shared Task Dataset](https://clpsych.org/shared-task-2021/)
+* Synthetic LMS data for behavior modeling
+
+## Challenges
+
+This project does **not** aim to:
+* Replace human judgment
+* Provide clinical diagnosis
+* Monitor private communications outside of school platforms
+
+Key challenges:
+* Ensuring ethical deployment and data privacy
+* Minimizing false positives (alerts) and maintaining trust
+* Consent and opt-in mechanisms must be prioritized
+
+## What next?
+
+* Develop a demo using synthetic data
+* Partner with educators and mental health experts for ethical feedback
+* Add multilingual NLP support for diverse regions
+* Create an open-source version for community contribution
+* Conduct trials in a school with appropriate safeguards
+
+## Acknowledgments
+
+* Inspired by [CLPsych](https://clpsych.org/) shared tasks on mental health
+* NLP tools from [Hugging Face Transformers](https://huggingface.co/)
+* Mental health icon from Wikimedia / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)
+* Course: [Building AI by Reaktor & University of Helsinki](https://buildingai.elementsofai.com/)
