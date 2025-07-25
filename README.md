@@ -1,78 +1,68 @@
-# AI-Powered Early Detection of Student Mental Health Issues  
-Final project for the Building AI course
+# AI-Powered Early Detection of Student Mental Health Issues
 
 ## Summary
-
 An AI system that identifies early signs of mental health struggles among students using NLP and behavioral analytics. Helps school counselors offer timely, confidential support.
 
-**Building AI course project**
+This is a final project for the Building AI course.
 
 ## Background
 
-Mental health issues among students, such as anxiety, depression, and burnout, often go unnoticed until they become severe. Traditional support systems rely on students seeking help, which many are hesitant to do due to stigma or lack of awareness.
+Mental health issues among students—such as anxiety, depression, and burnout—often go unnoticed until they become severe. Traditional support systems rely on students seeking help, which many are hesitant to do due to stigma or lack of awareness.
 
 This project addresses:
 * Undetected early warning signs in students
 * Limited capacity of schools to monitor individual well-being
 * The need for privacy-preserving proactive support systems
 
-Personal motivation: I’ve seen classmates silently suffer and believe AI can offer a compassionate, preventive solution. Education and mental well-being must go hand in hand.
+**Personal motivation:** I’ve seen classmates silently suffer and believe AI can offer a compassionate, preventive solution. Education and mental well-being must go hand in hand.
 
 ## How is it used?
 
 The system integrates with existing school tools like Learning Management Systems (LMS), chat apps, and submission portals. It monitors patterns such as:
-* Language used in messages or submissions (e.g., negative sentiment)
-* Reduced activity or participation
-* Sudden changes in sleep/activity based on platform usage
 
-When a pattern crosses a sensitivity threshold, an alert is sent **only to trained school counselors**, not to teachers or classmates.
+* Drop in assignment quality or submission delays
+* Decrease in engagement or participation
+* Change in tone/sentiment in messages or submissions
 
-This ensures:
-* Confidentiality and trust
-* Early, non-intrusive support
-* A data-driven approach to well-being
+When signs of distress are detected, an alert is sent to school counselors — not to teachers or peers — preserving privacy while enabling early intervention.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Mental_health_icon.svg/1200px-Mental_health_icon.svg.png" width="250">
+## What data is used?
 
-## Data sources and AI methods
+* Student messages (text-based) from LMS discussion boards and chat systems
+* Assignment submission timestamps and frequency
+* Optional self-assessment surveys
 
-**Data sources (simulated or with consent):**
-* Chat logs from school-approved platforms
-* LMS activity logs (logins, submissions, forum posts)
-* Assignment submission timestamps
+Data is anonymized and used under school data policies or with informed consent.
 
-**AI techniques:**
-* NLP for sentiment analysis and topic modeling
-* Time-series anomaly detection
-* Classification algorithms for risk levels
+## How does it work?
 
-Potential datasets for modeling:
-* [CLPsych 2021 Shared Task Dataset](https://clpsych.org/shared-task-2021/)
-* Synthetic LMS data for behavior modeling
+* **Natural Language Processing (NLP)** analyzes message sentiment and emotion.
+* **Behavioral analytics** track trends in participation and performance.
+* A **machine learning model** is trained to detect high-risk patterns from past anonymized cases.
 
-## Challenges
+If concerning patterns arise, a counselor is notified through a secure dashboard.
 
-This project does **not** aim to:
-* Replace human judgment
-* Provide clinical diagnosis
-* Monitor private communications outside of school platforms
+## What are the limitations?
 
-Key challenges:
-* Ensuring ethical deployment and data privacy
-* Minimizing false positives (alerts) and maintaining trust
-* Consent and opt-in mechanisms must be prioritized
+* May produce false positives/negatives due to context gaps
+* Requires responsible and ethical deployment to avoid misuse
+* Cultural and language diversity may impact accuracy — model needs local tuning
 
-## What next?
+## Ethical considerations
 
-* Develop a demo using synthetic data
-* Partner with educators and mental health experts for ethical feedback
-* Add multilingual NLP support for diverse regions
-* Create an open-source version for community contribution
-* Conduct trials in a school with appropriate safeguards
+* Privacy-first design: All alerts are confidential and never shown to peers or teachers.
+* Students and parents must be informed and provide consent before participation.
+* No grading or disciplinary action is based on AI outputs.
 
-## Acknowledgments
+## Future work
 
-* Inspired by [CLPsych](https://clpsych.org/) shared tasks on mental health
-* NLP tools from [Hugging Face Transformers](https://huggingface.co/)
-* Mental health icon from Wikimedia / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)
-* Course: [Building AI by Reaktor & University of Helsinki](https://buildingai.elementsofai.com/)
+* Expand model to include voice/video sentiment (with consent)
+* Improve accuracy with larger, diverse datasets
+* Build an open-source dashboard for school counselors
+
+## Authors
+
+Shariq Saiyed  
+[GitHub Profile](https://github.com/Shariq78692)
+
+---
